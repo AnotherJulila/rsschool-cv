@@ -1,5 +1,5 @@
 
-# CV 
+ 
 ### Software Developer 
 
 ![alt text]( https://t3.ftcdn.net/jpg/02/97/20/90/240_F_297209036_MNHVMIAzWTzIysYMcfZMnT2uaihTtjT6.jpg "Logo Title Text 1")
