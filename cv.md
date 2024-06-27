@@ -6,7 +6,7 @@
 
 
 ## Name: 
-Julia Ott
+Julia O*
 
 ## Contact Information: 
 [LinkedIn](https://de.linkedin.com/in/yulia-ott-bb306b1a1) 
