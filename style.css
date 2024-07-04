@@ -113,9 +113,11 @@ h2 {
 }
 
 .rs-logo {
-	width: 20px;
+	width: 60px;
+
 	height: auto;
 	vertical-align: middle;
+	background-color: #ccc;
 }
 
 .no-bullets {
