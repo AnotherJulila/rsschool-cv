@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.code {
+  font-family: monospace;
+  white-space: pre;
+}
