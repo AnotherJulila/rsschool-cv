@@ -1,7 +1,7 @@
 
  
-### Curriculum vitae 
-Julia Ott
+# Curriculum vitae 
+## Julia Ott
 
 ## Contact Information: 
 * [LinkedIn](https://de.linkedin.com/in/yulia-ott-bb306b1a1) 
@@ -19,8 +19,8 @@ Hello, I am AnotherJulila. My passion for software development started in 201* a
   - Cycos AG, Aachen
   - Duration: Oktober 2021 - now
   - Responsibilities and achievements:
-        - Developed and maintained frontend applications using C#.
-        - Contributed to an Angular project, focusing on frontend development and enhancing user experience (UX).
+        * Developed and maintained frontend applications using C#.
+        * Contributed to an Angular project, focusing on frontend development and enhancing user experience (UX).
 
 ## Skills :
 Java, C#, C++, Python, Data Science, Machine Learning and etc. 
