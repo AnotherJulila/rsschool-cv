@@ -1,13 +1,12 @@
 
  
-### Curriculum vitae
-
-## Name: 
+### Curriculum vitae 
 Julia Ott
 
 ## Contact Information: 
-[LinkedIn](https://de.linkedin.com/in/yulia-ott-bb306b1a1) 
-[yuliia_ott@proton.me](mailto:yuliia_ott@proton.me)
+* [LinkedIn](https://de.linkedin.com/in/yulia-ott-bb306b1a1) 
+
+* [yuliia_ott@proton.me](mailto:yuliia_ott@proton.me)
 
 
 
