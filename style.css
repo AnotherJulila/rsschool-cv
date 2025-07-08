@@ -82,6 +82,12 @@ header {
   border: 1px solid #7f8c8d;
 }
 
+
+.info-content {
+  text-align:justify;
+  margin-top: 20px;
+}
+
 /* NAV */
 nav {
   padding: 10px 0;
@@ -171,6 +177,8 @@ ul ul {
   margin-right: 10px;
   color: #e74c3c;
 }
+
+
 
 
 /* FOOTER */
