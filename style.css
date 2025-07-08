@@ -131,12 +131,12 @@ main {
 
 /* lists */
 ul {
-  list-style-type: none;
+  list-style-type: disc;
   padding-left: 0;
 }
 
 ul ul {
-  list-style-type: disc;
+  list-style-type: none;
   padding-left: 20px;
   margin-top: 5px;
 }
@@ -159,20 +159,17 @@ ul ul {
   background-color: #ecf0f1;
 }
 
-/* language icons */
+/* Language items */
 .language-item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.language-item .flag-icon {
+.language-item i {
   font-size: 1.5em;
   margin-right: 10px;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 24px;
-  height: 18px;
+  color: #e74c3c;
 }
 
 
