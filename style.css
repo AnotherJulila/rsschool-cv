@@ -50,11 +50,14 @@ header {
   justify-content:center;
   gap: 50px;
   align-items: center;
+
 }
 
 .text-content {
   text-align: left;
-  font-size: larger;
+  color: #c50000;
+
+  font-size: large;
 }
 
 .profile-photo {
@@ -137,3 +140,13 @@ ul ul {
 }
  
 
+.language-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-icons i {
+  font-size: 1.5em;
+  color: #940404;
+}
