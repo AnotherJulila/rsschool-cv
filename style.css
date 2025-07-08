@@ -176,6 +176,46 @@ ul ul {
 }
 
 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e74c3c;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.footer-link {
+  display: inline-block;
+}
+
+.footer-text {
+  text-align: left;
+}
+.footer-text p {
+  margin: 5px 0;
+  color: #2c3e50;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover .footer-icon {
+  opacity: 1;
+}
 
 
 /* Highlight */
