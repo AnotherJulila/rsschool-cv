@@ -131,7 +131,7 @@ main {
 
 /* lists */
 ul {
-  list-style-type: disc;
+  list-style-type: none;
   padding-left: 0;
 }
 
