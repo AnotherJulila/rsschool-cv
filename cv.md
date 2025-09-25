@@ -1,15 +1,14 @@
 
- 
 # Julia Ott
 
-## Contact Information: 
-* [LinkedIn](https://de.linkedin.com/in/yulia-ott-bb306b1a1) 
+## Contact Information:
+* [LinkedIn](https://de.linkedin.com/in/yulia-ott-bb306b1a1)
 
 * [yuliia_ott@proton.me](mailto:yuliia_ott@proton.me)
 
 
 
-## Self-Introduction: 
+## Self-Introduction:
 Hello, I am AnotherJulila. My passion for software development started in 201* and since then I have finished a Software Engineering Bachelor's program.   I have also completed a Master's in Business Administration and found a dream job. I believe in lifelong learning and am constantly updating my skills to stay current with industry trends
 
 
@@ -21,9 +20,9 @@ Hello, I am AnotherJulila. My passion for software development started in 201* a
   - Contributed to an Angular project, focusing on frontend development and enhancing user experience (UX).
 
 ## Skills :
-Java, C#, C++, Python, Data Science, Machine Learning and etc. 
+Java, C#, C++, Python, Data Science, Machine Learning and etc.
 
-## Code Examples: 
+## Code Examples:
 Binary tree task that i have written during Bachelor study
 ```
  /**
@@ -69,13 +68,12 @@ Binary tree task that i have written during Bachelor study
   - 2019 - 2024
 
 ## Fun fact :
-I do really love reading. 
+I do really love reading.
 
 
-## Languages:  
-* German : C1  
-* English : C1 
-* Russian : C2 
-* Ukrainian: C2 
+## Languages:
+* German : C1
+* English : C1
+* Russian : C2
+* Ukrainian: C2
 * Spanish: A1
- 

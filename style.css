@@ -230,7 +230,7 @@ footer {
 }
 
 .experience-item:hover, .education-item:hover {
-  background-color: rgba(194, 89, 89, 0.8); 
+  background-color: rgba(194, 89, 89, 0.8);
   cursor: pointer;
 }
 
