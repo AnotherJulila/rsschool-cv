@@ -3,45 +3,41 @@
   font-size: 12px;
   --primary-color: #333;
   --dominant-color: #ffbcbc;
+  --light-color: hsla(345, 87%, 82%, 1);
+
   --accent-color: hsla(345, 87%, 76%, 1);
   --secondary-color: #ecf0f1;
-  --primary-font: "Segoe UI", "Helvetica Neue", sans-serif;
-}
+  --primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+
+ }
 
 /* BASE / GLOBAL */
 body {
-  line-height: 1.6;
-  color: var(--primary-color);
-  font-weight: 400;
-  font-family: -apple-system, BlinkMacSystemFont, var(--primary-font), Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
-  max-width: 80%;
+   color: var(--primary-color);
+   font-family: var(--primary-font);
+   max-width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
   background: var(--dominant-color);
 }
 
 /* TYPOGRAPHY */
 h1 {
-  font-family: var(--primary-font), sans-serif;
-  font-size: 3.5rem;
+   font-size: 3.5rem;
   color: var(--primary-color);
   margin: 0;
   letter-spacing: 2px;
   font-weight: 700;
 }
-
-.text-content h1 {
-  font-family: 'Lato', sans-serif;
-}
+ 
 
 h2 {
   color: #2c3e50;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 2px;
+   letter-spacing: 2px;
 }
 
 .section h2 {
-  border-bottom: 2px solid #bdc3c7;
+  border-bottom: 2px dashed var(--accent-color);
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
@@ -50,14 +46,13 @@ h2 {
 /* HEADER */
 
 header {
-  text-align: center;
-  padding: 40px 0;
-  margin-bottom: 40px;
-}
+  margin-bottom: 20px;
+  margin-top: 50px;
+  }
 
 .header-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 50px;
   align-items: center;
 }
@@ -67,19 +62,18 @@ header {
 }
 
 .text-content p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.5rem;
+   font-size: 1.5rem;
   color: #7f8c8d;
   margin: 10px 0 0 0;
   letter-spacing: 1px;
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #7f8c8d;
+  border: 1px solid var(--accent-color);
 }
 
 .info-content {
@@ -90,7 +84,7 @@ header {
 /* NAVIGATION */
 
 nav {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1.1rem;
   border: 2px dashed var(--accent-color);
 }
@@ -99,7 +93,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 10px;
 }
 
 a {
@@ -111,11 +105,16 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
-  border-bottom: 2px dotted var(--primary-color);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
 }
 
-nav a:focus {
+nav a {
+  border: 2px solid transparent;
+}
+ nav a:focus {
   outline: none;
   border: 2px dotted var(--primary-color);
 }
@@ -123,12 +122,7 @@ nav a:focus {
 
 /* MAIN */
 
-main {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+ 
 
 .section {
   margin-bottom: 30px;
@@ -142,20 +136,18 @@ ul {
 }
 
 ul ul {
-  background-color: #e74c3c;
-  padding-left: 20px;
+   padding-left: 20px;
   margin-top: 5px;
 }
 
 /* CODE */
 
 .code-example {
-  background-color: #f5f5f5;
+  background-color: var(--light-color);
   line-height: 0.5;
   padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  border-left: 4px solid #e74c3c;
+   margin-bottom: 20px;
+  border-left: 4px solid var(--accent-color);
 }
 
 .code {
@@ -163,7 +155,7 @@ ul ul {
   white-space: pre;
   padding: 10px;
   border-radius: 5px;
-  background-color: #ecf0f1;
+  background-color: var(--secondary-color);
 }
 
 /* LANGUAGE ITEMS */
@@ -177,17 +169,15 @@ ul ul {
 .language-item i {
   font-size: 1.5rem;
   margin-right: 10px;
-  color: #e74c3c;
+  color: var(--primary-color);
 }
 
 /* FOOTER */
 
 footer {
   text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e74c3c;
+   margin-top: 40px;
+   border: 2px dashed var(--accent-color);
 }
 
 .footer-links {
@@ -209,7 +199,6 @@ footer {
 .footer-text p {
   margin: 5px 0;
   color: #2c3e50;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .footer-icon {
@@ -228,15 +217,19 @@ footer {
 .experience-item, .education-item {
   position: relative;
   transition: background-color 0.3s ease;
+
+  border-left: 4px solid transparent;
+
 }
 
 .experience-item:hover, .education-item:hover {
-  background-color: rgba(194, 89, 89, 0.8);
+
+border-left: 4px solid var(--accent-color);
   cursor: pointer;
-  animation: highlight 0.5s ease;
+  animation: highlight 2s ease;
 }
 
 @keyframes highlight {
   0% { background-color: rgba(255, 255, 0, 0); }
-  100% { background-color: rgba(226, 87, 87, 0.9); }
+  100% { background-color: var(--light-color); }
 }
