@@ -1,22 +1,30 @@
-/* BASE / GLOBAL */
+/* VARIABLES */
+:root {
+  font-size: 12px;
+  --primary-color: #333;
+  --dominant-color: #ffbcbc;
+  --accent-color: hsla(345, 87%, 76%, 1);
+  --secondary-color: #ecf0f1;
+  --primary-font: "Segoe UI", "Helvetica Neue", sans-serif;
+}
 
+/* BASE / GLOBAL */
 body {
-  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--primary-color);
   font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, var(--primary-font), Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
-  background: rgb(255, 188, 188);
+  background: var(--dominant-color);
 }
 
 /* TYPOGRAPHY */
-
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5em;
-  color: #2c3e50;
+  font-family: var(--primary-font), sans-serif;
+  font-size: 3.5rem;
+  color: var(--primary-color);
   margin: 0;
   letter-spacing: 2px;
   font-weight: 700;
@@ -26,11 +34,8 @@ h1 {
   font-family: 'Lato', sans-serif;
 }
 
-h2, .section h2 {
-  color: #2c3e50;
-}
-
 h2 {
+  color: #2c3e50;
   font-family: 'Playfair Display', serif;
   letter-spacing: 2px;
 }
@@ -41,20 +46,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-a {
-  color: #e74c3c;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  transition: background-color 0.3s ease;
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-a:hover {
-  text-decoration: none;
-  background-color: rgba(231, 76, 60, 0.2);
-}
 
 /* HEADER */
 
@@ -77,7 +68,7 @@ header {
 
 .text-content p {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #7f8c8d;
   margin: 10px 0 0 0;
   letter-spacing: 1px;
@@ -99,28 +90,36 @@ header {
 /* NAVIGATION */
 
 nav {
-  padding: 10px 0;
-  margin-bottom: 20px;
-  font-size: 1.1em;
-  background-color: #ecf0f1;
+  padding: 2rem;
+  font-size: 1.1rem;
+  border: 2px dashed var(--accent-color);
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
-nav li a {
-  padding: 5px 10px;
-  font-size: 1.1em;
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+  padding: 2px 4px;
 }
 
-nav li a:hover {
-  border-radius: 5px;
+a:hover {
+  text-decoration: none;
+  border-bottom: 2px dotted var(--primary-color);
 }
+
+nav a:focus {
+  outline: none;
+  border: 2px dotted var(--primary-color);
+}
+
 
 /* MAIN */
 
@@ -143,6 +142,7 @@ ul {
 }
 
 ul ul {
+  background-color: #e74c3c;
   padding-left: 20px;
   margin-top: 5px;
 }
@@ -175,7 +175,7 @@ ul ul {
 }
 
 .language-item i {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-right: 10px;
   color: #e74c3c;
 }
