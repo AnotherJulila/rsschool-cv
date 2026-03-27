@@ -4,4 +4,4 @@
 - [HTML, CSS & Git Basics CV](https://AnotherJulila.github.io//rsschool-cv/)
 
 
-I used as inspiration this website wringham.co.uk like its design 
+I used as inspiration this website wringham.co.uk like its design
