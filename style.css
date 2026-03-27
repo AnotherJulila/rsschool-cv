@@ -2,11 +2,16 @@
 :root {
   font-size: 12px;
   --primary-color: #333;
+  --heading-color: #2c3e50;
+  --muted-color: #7f8c8d;
   --dominant-color: #ffbcbc;
   --light-color: hsla(345, 87%, 82%, 1);
   --accent-color: hsla(345, 87%, 76%, 1);
   --secondary-color: #ecf0f1;
+  --white: #fff;
   --primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  --border-dashed: 2px dashed var(--accent-color);
+  --transition-speed: 0.3s ease;
 }
 
 /* BASE / GLOBAL */
@@ -20,29 +25,28 @@ body {
 }
 
 .section {
-  margin-bottom: 30px;
-  font-size: 16px;
+  margin-bottom: 2.5rem;
+  font-size: 1.33rem;
   font-weight: 400;
 }
 
 /* TYPOGRAPHY */
 h1 {
   font-size: 3.5rem;
-  color: var(--primary-color);
   margin: 0;
   letter-spacing: 2px;
   font-weight: 700;
 }
 
 h2 {
-  color: #2c3e50;
+  color: var(--heading-color);
   letter-spacing: 2px;
 }
 
 .section h2 {
-  border-bottom: 2px dashed var(--accent-color);
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  border-bottom: var(--border-dashed);
+  padding-bottom: 0.83rem;
+  margin-bottom: 1.25rem;
 }
 
 /* LINKS */
@@ -50,7 +54,7 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   letter-spacing: 0.5px;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition-speed);
   padding: 2px 4px;
 }
 
@@ -60,22 +64,22 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
+a:focus {
+  outline: none;
+  border: 2px dotted var(--primary-color);
+}
+
 main a {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-style: dotted;
 }
 
-main a:focus {
-  outline: none;
-  border: 2px dotted var(--primary-color);
-}
-
 /* NAVIGATION */
 nav {
   padding: 1rem;
   font-size: 1.1rem;
-  border: 2px dashed var(--accent-color);
+  border: var(--border-dashed);
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -85,7 +89,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 0.83rem;
   margin: 0;
   padding: 0;
   min-width: 0;
@@ -100,20 +104,15 @@ nav a {
   white-space: nowrap;
 }
 
-nav a:focus {
-  outline: none;
-  border: 2px dotted var(--primary-color);
-}
-
 /* HEADER */
 header {
-  margin: 50px 0;
+  margin: 4.16rem 0;
 }
 
 .header-content {
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 1.66rem;
   align-items: center;
 }
 
@@ -123,8 +122,8 @@ header {
 
 .text-content p {
   font-size: 1.5rem;
-  color: #7f8c8d;
-  margin: 10px 0 0;
+  color: var(--muted-color);
+  margin: 0.83rem 0 0;
   letter-spacing: 1px;
 }
 
@@ -137,7 +136,7 @@ header {
 
 .info-content {
   text-align: justify;
-  margin-top: 20px;
+  margin-top: 1.66rem;
 }
 
 /* LISTS */
@@ -147,8 +146,23 @@ ul {
 }
 
 ul ul {
-  padding-left: 20px;
-  margin-top: 5px;
+  padding-left: 1.66rem;
+  margin-top: 0.42rem;
+}
+
+/* SHARED: items with left-border highlight on hover */
+.project-item,
+.experience-item,
+.education-item {
+  position: relative;
+  border-left: 4px solid transparent;
+  transition: border-color var(--transition-speed), background-color var(--transition-speed);
+}
+
+.project-item:hover,
+.experience-item:hover,
+.education-item:hover {
+  border-left-color: var(--accent-color);
 }
 
 /* PROJECTS */
@@ -159,19 +173,13 @@ ul ul {
 }
 
 .project-item {
-  border-left: 4px solid transparent;
   padding-left: 1rem;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
-}
-
-.project-item:hover {
-  border-left-color: var(--accent-color);
 }
 
 .project-item strong {
   display: block;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: var(--heading-color);
 }
 
 .project-item p {
@@ -187,39 +195,19 @@ ul ul {
   padding-left: 0;
 }
 
-/* EXPERIENCE & EDUCATION */
-.experience-item,
-.education-item {
-  position: relative;
-  transition: background-color 0.3s ease;
-  border-left: 4px solid transparent;
-}
-
-.experience-item:hover,
-.education-item:hover {
-  border-left: 4px solid var(--accent-color);
-  cursor: pointer;
-  animation: highlight 2s ease;
-}
-
-@keyframes highlight {
-  0% { background-color: rgba(255, 255, 0, 0); }
-  100% { background-color: var(--light-color); }
-}
-
 /* CODE */
 .code-example {
   background-color: var(--light-color);
   line-height: 0.5;
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 1.25rem;
+  margin-bottom: 1.66rem;
   border-left: 4px solid var(--accent-color);
 }
 
 .code {
   font-family: 'Courier New', monospace;
   white-space: pre;
-  padding: 10px;
+  padding: 0.83rem;
   border-radius: 5px;
   background-color: var(--secondary-color);
 }
@@ -233,12 +221,12 @@ ul ul {
 }
 
 .card {
-  background: linear-gradient(145deg, #fff 0%, var(--secondary-color) 100%);
+  background: linear-gradient(145deg, var(--white) 0%, var(--secondary-color) 100%);
   border-radius: 12px;
   padding: 1.5rem;
   border: 2px solid var(--accent-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed), border-color var(--transition-speed);
 }
 
 .card-header {
@@ -247,7 +235,7 @@ ul ul {
   gap: 0.75rem;
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
-  border-bottom: 2px dashed var(--accent-color);
+  border-bottom: var(--border-dashed);
 }
 
 .card-header i {
@@ -257,7 +245,7 @@ ul ul {
 
 .card-header h3 {
   font-size: 1.1rem;
-  color: #2c3e50;
+  color: var(--heading-color);
   margin: 0;
   font-weight: 600;
 }
@@ -281,14 +269,14 @@ ul ul {
 /* FOOTER */
 footer {
   text-align: center;
-  margin-top: 40px;
-  border: 2px dashed var(--accent-color);
+  margin-top: 3.33rem;
+  border: var(--border-dashed);
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 1.25rem;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -302,15 +290,15 @@ footer {
 }
 
 .footer-text p {
-  margin: 5px 0;
-  color: #2c3e50;
+  margin: 0.42rem 0;
+  color: var(--heading-color);
 }
 
 .footer-icon {
   width: 30px;
   height: 30px;
   opacity: 0.8;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--transition-speed);
 }
 
 .footer-link:hover .footer-icon {
