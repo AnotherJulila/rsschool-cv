@@ -10,21 +10,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/avatar.jpg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&family=Raleway:wght@700&family=Roboto:wght@400;700&family=Lato:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
-
-
 </head>
 
-<body>  <nav>
+<body>
+  <nav>
     <ul>
       <li><a href="#info">About Me</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#code-example">Code Example</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#language">Languages</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -45,7 +44,8 @@
   <main>
     <section class="section" id="info">
       <h2>About Me</h2>
-      <div class="info-content">      <p>
+      <div class="info-content">
+        <p>
         Hello, I am AnotherJulila. My passion for software development started
         in 201* and since then I have finished a Software Engineering
         Bachelor’s program. I have also completed a Master’s in Business
@@ -53,7 +53,7 @@
         and am constantly updating my skills to stay current with industry
         trends.
       </p>
-       </div>
+      </div>
 
     </section>
 
@@ -115,37 +115,50 @@
 
     <section class="section" id="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>
-          <strong>Programming Languages</strong>
-          <ul>
-            <li>TypeScript, JavaScript</li>
-            <li>Java, C#, C++</li>
-            <li>Python</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Web Development</strong>
-          <ul>
-            <li>HTML, CSS</li>
-            <li>Angular</li>
-            <li>Frontend Development</li>
-            <li>User Experience (UX) Design</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Other Skills</strong>
-          <ul>
-            <li>Data Science</li>
-            <li>Machine Learning</li>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Database Management</li>
-            <li>Version Control (Git)</li>
-            <li>Agile Methodologies</li>
-            <li>Project Management</li>
-          </ul>
-        </li>
-      </ul>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">TypeScript</span>
+            <span class="card-tag">JavaScript</span>
+            <span class="card-tag">Java</span>
+            <span class="card-tag">C#</span>
+            <span class="card-tag">C++</span>
+            <span class="card-tag">Python</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-globe"></i>
+            <h3>Web Development</h3>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+            <span class="card-tag">Angular</span>
+            <span class="card-tag">Frontend</span>
+            <span class="card-tag">UX Design</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-tools"></i>
+            <h3>Other Skills</h3>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">Data Science</span>
+            <span class="card-tag">Machine Learning</span>
+            <span class="card-tag">NLP</span>
+            <span class="card-tag">Database</span>
+            <span class="card-tag">Git</span>
+            <span class="card-tag">Agile</span>
+            <span class="card-tag">Project Management</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="code-example">
@@ -178,52 +191,84 @@
       <h2>Projects</h2>
 
       <p>
-        Most of my projects are hosted in private repositories. However, you can find some of my study-related repositories from the university below:
+        Most of the projects that I worked on during my life cannot be shown for various reasons, but here is a small list with descriptions of the projects that I can remember.
       </p>
-      <ul>
-        <li>
-          <a href="https://github.com/Julia">Study Repositories on GitHub</a>
-        </li>
-        <li>
-          <strong>Machine Learning Algorithm to Predict Type 2 Diabetes</strong>
+      <ul class="project-list">
+        <li class="project-item">
+          <strong>CT Scans &amp; 3D Medical Visualisation (Apprenticeship)</strong>
           <p>
-            During my master's studies, I worked on a machine learning algorithm to predict Type 2 Diabetes. This project involved analyzing medical and demographic data to identify patterns and risk factors associated with the development of Type 2 Diabetes. The dataset used for this project can be found on <a href="https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset">Kaggle</a>.
+            During my apprenticeship, I primarily focused on processing CT scans: displaying them and reconstructing 3D models. My development work was mainly in C++, with significant time dedicated to debugging the Boost libraries. I handled various aspects of medical technology, with emphasis on 3D visualization and rotational analysis. I used Microsoft Kinect for motion tracking; with OpenCV, I generated a skeletal overlay to detect and record the user's posture.
           </p>
         </li>
-        <li>
+        <li class="project-item">
+          <strong>Bachelor Thesis: X-ray Device Positioning</strong>
+          <p>
+            I dedicated my bachelor thesis to the reconstruction of X-ray device positioning during surgical operations. Surgeons often need to reproduce the exact same angle utilized in previous scans (such as CTs), but since medical equipment is frequently moved within the operating room, capturing the image from the identical spatial perspective is difficult. I addressed this using the Solaris Cam, which offers a cost-effective solution for tracking and alignment.
+          </p>
+        </li>
+        <li class="project-item">
+          <strong>Machine Learning Algorithm to Predict Type 2 Diabetes (Master's)</strong>
+          <p>
+            During my master's studies, I worked on a machine learning algorithm to predict Type 2 Diabetes. This project involved analyzing medical and demographic data to identify patterns and risk factors associated with the development of Type 2 Diabetes.
+          </p>
+          <ul>
+            <li>Analyzed medical and demographic data to identify risk factors</li>
+            <li>Built and evaluated predictive models</li>
+            <li>Dataset: <a href="https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset">Kaggle</a></li>
+          </ul>
+        </li>
+        <li class="project-item">
           <strong>Predicting Spoilers in Movie Reviews</strong>
-
           <p>
-            Another project I worked on involved predicting whether a movie review contains spoilers. This task required natural language processing techniques to analyze the text of movie reviews and determine if they contained spoilers. The dataset for this project can be found on <a href="https://www.kaggle.com/competitions/spoiler-detection">Kaggle</a>.
+            Another project I worked on involved predicting whether a movie review contains spoilers. This task required natural language processing techniques to analyze the text of movie reviews and determine if they contained spoilers.
           </p>
+          <ul>
+            <li>Applied NLP techniques to analyze review text</li>
+            <li>Classification task: spoiler detection</li>
+            <li>Dataset: <a href="https://www.kaggle.com/competitions/spoiler-detection">Kaggle</a></li>
+          </ul>
         </li>
+
+        <li class="project-item project-link">
+          <a href="https://github.com/Julila">Study Repositories on GitHub</a>
+        </li>
+        
       </ul>
     </section>
 
     <section class="section" id="language">
       <h2>Languages</h2>
-      <ul class="no-bullets">
-        <li class="language-item">
-          <i class="fas fa-language"></i>
-          <span>English - Fluent</span>
-        </li>
-        <li class="language-item">
-          <i class="fas fa-language"></i>
-          <span>German - Fluent</span>
-        </li>
-        <li class="language-item">
-          <i class="fas fa-language"></i>
-          <span>Ukrainian - Native</span>
-        </li>
-        <li class="language-item">
-          <i class="fas fa-language"></i>
-          <span>Russian - Native</span>
-        </li>
-        <li class="language-item">
-          <i class="fas fa-language"></i>
-          <span>Spanish - Beginner</span>
-        </li>
-      </ul>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-star"></i>
+            <h3>Native</h3>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">Ukrainian</span>
+            <span class="card-tag">Russian</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-comments"></i>
+            <h3>Fluent</h3>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">English</span>
+            <span class="card-tag">German</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-seedling"></i>
+            <h3>Beginner</h3>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">Spanish</span>
+          </div>
+        </div>
+      </div>
     </section>
 
 
@@ -238,7 +283,7 @@
 
     <footer>
       <div class="footer-links">
-        <a href="https://github.com/AnotherJulila" target="_blank" class="footer-link">
+        <a href="https://github.com/Julila" target="_blank" class="footer-link">
           <img src="assets/github-logo.png" alt="GitHub" class="footer-icon">
         </a>
         <a href="https://rs.school/courses/javascript-ru" target="_blank" class="footer-link">
@@ -246,7 +291,7 @@
         </a>
         <div class="footer-text">
 
-          <p>Last updated: July 2025</p>
+          <p>Last updated: March 2026	</p>
         </div>
        </div>
     </footer>
